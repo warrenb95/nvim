@@ -30,8 +30,14 @@ null_ls.setup({
 	sources = {
 		formatting.gofmt,
 		formatting.goimports,
-		formatting.golangci_lint,
 		formatting.stylua,
+		formatting.protolint,
+		formatting.markdownlint,
+		formatting.sqlfull,
 		diagnostics.golangci_lint,
+		diagnostics.markdownlint,
+		diagnostics.luacheck,
+		diagnostics.protolint,
+		diagnostics.sqlfluff,
 	},
 })

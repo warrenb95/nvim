@@ -1,9 +1,9 @@
 vim.cmd("colorscheme default")
 
-local colorschemes = {"dracula"}
+local colorschemes = { "terafox" }
 
 math.randomseed(os.time())
-local rand = math.random(#(colorschemes))
+local rand = math.random(#colorschemes)
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorschemes[rand])
 

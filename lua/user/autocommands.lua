@@ -15,8 +15,15 @@ vim.cmd([[
 
   augroup _markdown
     autocmd!
-    autocmd FileType markdown setlocal wrap
     autocmd FileType markdown setlocal spell
+    autocmd FileType markdown setlocal tabstop=2
+    autocmd FileType markdown setlocal shiftwidth=2
+  augroup end
+
+  augroup _proto
+    autocmd!
+    autocmd FileType proto setlocal tabstop=2
+    autocmd FileType proto setlocal shiftwidth=2
   augroup end
 
   augroup _auto_resize
@@ -30,4 +37,3 @@ vim.cmd([[
   augroup end
 
 ]])
-

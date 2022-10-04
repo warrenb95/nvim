@@ -61,7 +61,8 @@ return packer.startup(function(use)
 
 	-- Colorschemes
 	use("morhetz/gruvbox")
-    use("dracula/vim")
+	use("dracula/vim")
+	use("EdenEast/nightfox.nvim")
 
 	-- cmp plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin
