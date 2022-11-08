@@ -18,6 +18,7 @@ vim.cmd([[
     autocmd FileType markdown setlocal spell
     autocmd FileType markdown setlocal tabstop=2
     autocmd FileType markdown setlocal shiftwidth=2
+    autocmd FileType markdown runtime macros/emoji-ab.vim
   augroup end
 
   augroup _proto

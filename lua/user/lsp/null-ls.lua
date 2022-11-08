@@ -34,6 +34,7 @@ null_ls.setup({
 		formatting.protolint,
 		formatting.markdownlint,
 		formatting.sqlfull,
+		formatting.terraform_fmt,
 		diagnostics.golangci_lint,
 		diagnostics.markdownlint,
 		diagnostics.luacheck,

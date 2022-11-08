@@ -69,12 +69,12 @@ return packer.startup(function(use)
 	use("hrsh7th/cmp-buffer") -- buffer completions
 	use("hrsh7th/cmp-path") -- path completions
 	use("hrsh7th/cmp-cmdline") -- cmdline completions
-	use("saadparwaiz1/cmp_luasnip") -- snippet completions
 	use("hrsh7th/cmp-nvim-lsp")
 	use("f3fora/cmp-spell")
 
 	-- snippets
 	use("L3MON4D3/LuaSnip") --snippet engine
+	use("saadparwaiz1/cmp_luasnip") -- snippet completions
 	use("rafamadriz/friendly-snippets") -- a bunch of snippets to use
 
 	-- LSP
@@ -109,6 +109,25 @@ return packer.startup(function(use)
 	use("tyru/open-browser.vim")
 	use("aklt/plantuml-syntax")
 	use("weirongxu/plantuml-previewer.vim")
+
+	-- Todo
+	use({
+		"AmeerTaweel/todo.nvim",
+		requires = "nvim-lua/plenary.nvim",
+		config = function()
+			require("todo").setup({
+				-- your configuration comes here
+				-- or leave it empty to use the default settings
+				-- refer to the configuration section below
+			})
+		end,
+	})
+
+	-- Bookmarks
+	use("MattesGroeger/vim-bookmarks")
+
+	-- Emojis
+	use("https://gitlab.com/gi1242/vim-emoji-ab.git")
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
